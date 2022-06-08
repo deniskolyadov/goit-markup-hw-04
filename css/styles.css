@@ -151,13 +151,30 @@ main {
     display: block;
 }
 
-.contacts-item-link:hover {
+.contacts-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-item:hover .contacts-item-link {
     color: var(--brand-color);
+}
+
+.contacts-item:hover .contacts-item-icon {
+    fill: var(--brand-color);
 }
 
 .contacts-item:first-child {
     margin-right: 50px;
 }
+
+.contacts-item-icon {
+    display: block;
+    fill: var(--second-text-color);
+    margin-right: 10px;
+}
+
 /* Банер */
 .banner {
     background-color: #2F303A;
@@ -245,6 +262,14 @@ main {
     margin-right: 30px;
 }
 
+.benefits-container {
+    display: flex;
+    background-color: #f5f4fa;
+    padding: 25px 102.34px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
 /* Чем мы занимаемся */
 .development {
     padding-bottom: 94px;
@@ -327,6 +352,30 @@ main {
     padding: 30px 15px;
 
 }
+
+.our-team-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+
+
+.our-team-social-link {
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.our-team-social-list:not(:last-child) .our-team-social-link {
+    margin-right: 10px;
+}
+
+.our-team-social-link:hover {
+    border-radius: 50%;
+    background-color: var(--brand-color);
+    padding: 12px 12px;
+}
+
 /*ПОРТФОЛИО*/
 
 .portfolio {
