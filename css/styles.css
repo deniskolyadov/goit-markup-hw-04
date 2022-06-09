@@ -176,6 +176,12 @@ main {
 }
 
 /* Банер */
+.banner{
+
+    background-image: linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)) , url(../images/hero.png);
+    background-size: cover;
+}
+
 .banner {
     background-color: #2F303A;
     padding-top: 200px;
@@ -559,7 +565,7 @@ main {
 
 .footer-social-container{
     margin-top: 72px;
-    
+
 }
 
 .footer .adress {
